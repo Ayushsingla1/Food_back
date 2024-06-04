@@ -1,10 +1,14 @@
 const express = require('express');
 const app = express();
 const cookieparser = require('cookie-parser');
+const cors = require('cors');
 require('dotenv').config();
 app.use(express.json());
 app.use(cookieparser())
 
+app.use(cors({
+    origin : "https://food-amoure.onrender.com"
+}))
 const db = require('./config/database');
 db();
 
