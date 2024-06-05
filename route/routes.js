@@ -18,8 +18,8 @@ router.get('/test',Authi,(req,res)=>{
     )
 })
 
-router.post('/Signin',Sign);
-router.post('/login',log);
+router.post('/signedin',Sign);
+router.post('/loggedin',log);
 router.post('/contact',Contact)
 router.get('/review',reviewShow)
 router.post('/reviews',reviewPost)
